@@ -1,0 +1,19 @@
+package com.emerik.carservice.service;
+
+import com.emerik.carservice.entity.Car;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+@Service
+public interface CarService {
+
+    public List<Car> getAll();
+
+    public Car getCarById(int id);
+
+    public Car save(Car car);
+
+    public List<Car> byUserId(int userId);
+
+}
